@@ -1,0 +1,75 @@
+/*carousel*/
+	
+  .carousel-inner img {
+      /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+	  background-color:#0000008a;
+  }
+  .carousel-caption h3 {
+      color: #00ffff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  #caption
+{
+	font-size:45px;
+}
+/*carousel*/
+/*navbar*/
+	.navbar-brand
+{
+  font-size:35px;
+  border-right:2px solid white;
+}
+
+/*navbar*/
+/*features*/
+.featured-service
+{
+	margin:15px;
+}
+.features-header h3
+{
+	text-align:center;
+	padding:20px;
+	font-size:45px;
+}
+.border-right
+{
+	border-right: 2px groove white;
+}
+/*features*/
+/*team*/
+.team-header h3
+{
+	text-align:center;
+	padding:20px;
+	font-size:45px;
+}
+#team
+{
+	padding:70px;
+}
+/*team*/
+/*contact us*/
+.contact-header h3
+{
+	text-align:center;
+	padding:5px;
+	font-size:45px;
+}
+.contact-header p
+{
+	text-align:center;
+}
+#contact
+{
+	padding:50px;
+	color:#00ffff;
+	background-color:#333333;
+}
+
