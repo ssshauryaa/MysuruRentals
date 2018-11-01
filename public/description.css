@@ -1,0 +1,54 @@
+
+body
+{
+	background-color:#fee0bc;
+}
+
+/*==============================HEADER====================================*/
+
+#header
+{
+	 zoom:1.2;
+}
+
+
+/*===============================BODY==================================*/
+
+#image
+{
+	width:300px;
+	height:300px;
+	border-radius:10px;
+	margin-left:40%;
+}
+
+#moreimage
+{
+	width:30px;
+	height:30px;
+	border-radius:10px;
+}
+
+#details
+{
+	margin-left:20px;
+	font-weight:bold;
+	font-size:20px;
+}
+
+/*==============================BUTTONS==================================*/
+
+#buttons
+{
+	text-align:center;
+	zoom:1.5;
+}
+
+#each
+{
+	border-radius:10px;
+	background-color:2b2525;
+	color:white;
+	padding:5px;
+}
+

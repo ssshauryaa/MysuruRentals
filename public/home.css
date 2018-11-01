@@ -1,0 +1,50 @@
+
+body
+{
+	background-color:#fee0bc;
+	font-family:lora;
+}
+
+/*======================================================================*/
+
+#header
+{
+	 zoom:1.2;
+}
+
+
+/*========================================================================*/
+
+.add
+{
+	 padding:20px;
+}
+
+#image
+{
+	width:300px;
+	height:300px;
+	border-radius:10px 10px 0px 0px;
+}
+
+#description
+{
+	font-weight:bold;
+	zoom:1.2;
+	background-color:2b2525;
+	color:white;
+	width:250px;
+	text-align:center;
+}
+
+/*========================================================================*/
+
+#pageno
+{
+	text-align:center;
+	background-color:2b2525;
+	color:white;
+}
+
+
+	
