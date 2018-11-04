@@ -1,11 +1,16 @@
 
 body
 {
-	background-color:#333333;
-	padding:80px;
+	  background-color:#333333;
+	  color:white;
 }
 
 /*======================================================================*/
+
+#mainImage
+{
+	width:100%;
+}
 
 #header
 {
@@ -37,14 +42,85 @@ body
 	text-align:center;
 }
 
-/*========================================================================*/
-
-#pageno
+#link
 {
-	text-align:center;
-	background-color:2b2525;
+	text-decoration:none;
 	color:white;
 }
+
+/*===========================================================================*/
+ 
+	.navbar-brand
+{
+  font-size:35px;
+  border-right:2px solid white;
+}
+
+#desc
+{
+	text-align:center;
+}
+
+#card
+{
+	padding:20px;
+}
+
+/*============================================================================*/
+
+
+ input[type=text] {
+    width: 500px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+#searchbox
+{
+	margin-bottom:280px;
+}
+
+/*==============================PAGINATION===============================*/
+
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
 
 
 	
