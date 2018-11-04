@@ -91,6 +91,7 @@ input[type=text]:focus {
 #searchbox
 {
 	margin-bottom:280px;
+	color:black;
 }
 
 /*==============================PAGINATION===============================*/
