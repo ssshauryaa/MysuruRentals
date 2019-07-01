@@ -1,0 +1,113 @@
+
+<html>
+<head>
+<title>Add Pg</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="addPg.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+body
+{
+  background-color:#333333;
+  padding:80px;
+}
+.container
+{
+  margin:auto;
+  width:500px;
+  height:910px;
+  background-color:#ffffff;
+}
+.header h3
+{
+  text-align:center;
+  font-size:45px;
+}
+form
+{
+ padding:10px;
+}
+</style>
+
+<body>
+
+	<header>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">MysuruRentals</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/ohome">Home</a></li>
+      <li><a href="#featured-service">Features</a></li>
+      <li><a href="#">About Us</a></li>
+	  <li><a href="#team">Team</a></li>
+	  <li><a href="#contact">Contact</a></li>
+    </ul>
+	<ul class="nav navbar-nav navbar-right">
+	  <li><a href="/oprofile"> Hello, <%= details.first_name %>  </a></li>
+    </ul>
+
+  </div>
+</nav>
+</header>
+
+	<div class="container">
+      <div class="header">
+  		<h3>Add PG</h3>
+  		</div>
+		<hr>
+		 <form action="/addPg1" method="post">
+		<div class="form-group">
+		<label for="name">Name of Pg:</label>
+		<input type="text" class="form-control" id="name" name="name">
+		</div>
+    <div class="form-group">
+		<label for="address">Details:</label>
+		<input type="textarea" class="form-control"  id="address" name="details" placeholder="Bedroom/Kitchen/Bathroom/AC/NON-AC">
+		</div>
+    <div class="form-group">
+		<label for="address">Pg Type:</label>
+    <input type="text" class="form-control" id="address" name="pgtype" placeholder="Boys/girls">
+		</div>
+    <div class="form-group">
+		<label for="address">Wifi:</label>
+		<input type="text" class="form-control" rows="3" cols="156" id="address" name="Wifi" placeholder="Yes/No">
+		</div>
+    <div class="form-group">
+		<label for="address">Hot Water:</label>
+		<input type="text" class="form-control" id="address" name="hotwater" placeholder="Yes/No">
+		</div>
+    <div class="form-group">
+		<label for="address">Food:</label>
+		<input type="text" class="form-control" id="address" name="food" placeholder="Mess available-Yes/No"></textarea>
+		</div>
+		<div class="form-group">
+		<label for="address">Address:</label>
+		<input type="textarea" class="form-control"  id="address" name="address">
+		</div>
+		<div class="form-group">
+		<label for="city">City/District:</label>
+		<input type="text" class="form-control" id="city" name="city">
+		</div>
+		<div class="form-group">
+		<label for="state">State:</label>
+		<input type="text" class="form-control" id="state" name="state">
+		</div>
+		<div class="form-group">
+		<label for="state">Price(in INR):</label>
+		<input type="text" class="form-control" id="state" name="price">
+		</div>
+		<button class="btn btn-primary" type="submit">Upload</button>
+		<button class="btn btn-primary" onclick="location.href='/';">Cancel</button>
+</form>
+		</div>
+
+
+</body>
+</html>

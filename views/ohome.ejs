@@ -24,6 +24,7 @@
 }
 
 </style>
+
 <body>
 
 <header>
@@ -33,11 +34,11 @@
       <a class="navbar-brand" href="#"><span>MysuruRentals</span></a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="/home">Home</a></li>
-
+      <li><a href="/ohome">Home</a></li>
+      <li><a href="/addpg">Add PG</a></li>
     </ul>
 	<ul class="nav navbar-nav navbar-right">
-	  <li><a href="/profile"> Hello, <%= details.first_name %>  </a></li>
+	  <li><a href="/oprofile"> Hello, <%= details.first_name %>  </a></li>
     </ul>
 
   </div>
@@ -67,12 +68,12 @@
      <h3>FIND YOUR PG</h3>
    </div>
 
-
 <% var i;
    for(i=0;i<pgdetails.length;i++) {
    if(i%3==0)
    { %>
      <section id="team">
+
         <div class="container">
      	<div class="row">
 <% } %>
@@ -95,21 +96,12 @@
 <% } %>
 
 <% } %>
-<!-- <section id="team">
-   <div class="container">
-	<div class="row">
-	<div class="col-lg-4 box">
-	<a href="#" id="link">
-	<div class="card" id="card">
-		<img class="card-img-top" src="pic1.jpg" width="20px" height="200px" alt="Card image" style="width:100%">
-    <div class="card-body" id="desc">
-      <h4 class="card-title">home address</h4>
-      <p class="card-text">3 bedroom 1hall 1 bathroom 1kitchen</p>
-	</div>
-	</div>
-	</a>
-	</div>
-	<div class="col-lg-4 box">
+
+
+
+
+
+	<!-- <div class="col-lg-4 box">
 	<a href="#" id="link">
 	<div class="card" id="card">
 		<img class="card-img-top" src="pic1.jpg" width="20px" height="200px" style="width:100%">
@@ -120,6 +112,7 @@
 	</div>
 	</a>
 	</div>
+
 	<div class="col-lg-4 box">
 	<div class="card" id="card">
 	<a href="#" id="link">
@@ -131,51 +124,56 @@
 	</div>
 	</a>
 	</div>
+
+
+
+<section id="team">
+   <div class="container">
+	<div class="row">
+
+	<div class="col-lg-4 box">
+	<a href="#" id="link">
+	<div class="card" id="card">
+		<img class="card-img-top" src="pic1.jpg" width="20px" height="200px" alt="Card image" style="width:100%">
+    <div class="card-body" id="desc">
+      <h4 class="card-title">home address</h4>
+      <p class="card-text">3 bedroom 1hall 1 bathroom 1kitchen</p>
+	</div>
+	</div>
+	</a>
+	</div>
+
+	<div class="col-lg-4 box">
+	<a href="#" id="link">
+	<div class="card" id="card">
+		<img class="card-img-top" src="pic1.jpg" width="20px" height="200px" style="width:100%">
+	<div class="card-body" id="desc">
+      <h4 class="card-title">home address</h4>
+      <p class="card-text">3 bedroom 1hall 1 bathroom 1kitchen</p>
+    </div>
+	</div>
+	</a>
+	</div>
+
+	<div class="col-lg-4 box">
+	<a href="#" id="link">
+	<div class="card" id="card">
+    <img class="card-img-top" src="pic1.jpg" width="20px" height="200px" style="width:100%">
+    <div class="card-body" id="desc">
+      <h4 class="card-title">home address</h4>
+      <p class="card-text">3 bedroom 1hall 1 bathroom 1kitchen and some extra accesories</p>
+    </div>
+	</div>
+	</a>
+	</div>
+
    </div>
 </section>
 
 <section id="team">
    <div class="container">
 	<div class="row">
-	<div class="col-lg-4 box">
-	<a href="#" id="link">
-	<div class="card" id="card">
-		<img class="card-img-top" src="pic1.jpg" width="20px" height="200px" alt="Card image" style="width:100%">
-    <div class="card-body" id="desc">
-      <h4 class="card-title">home address</h4>
-      <p class="card-text">3 bedroom 1hall 1 bathroom 1kitchen</p>
-	</div>
-	</div>
-	</a>
-	</div>
-	<div class="col-lg-4 box">
-	<a href="#" id="link">
-	<div class="card" id="card">
-		<img class="card-img-top" src="pic1.jpg" width="20px" height="200px" style="width:100%">
-	<div class="card-body" id="desc">
-      <h4 class="card-title">home address</h4>
-      <p class="card-text">3 bedroom 1hall 1 bathroom 1kitchen</p>
-    </div>
-	</div>
-	</a>
-	</div>
-	<div class="col-lg-4 box">
-	<a href="#" id="link">
-	<div class="card" id="card">
-    <img class="card-img-top" src="pic1.jpg" width="20px" height="200px" style="width:100%">
-    <div class="card-body" id="desc">
-      <h4 class="card-title">home address</h4>
-      <p class="card-text">3 bedroom 1hall 1 bathroom 1kitchen and some extra accesories</p>
-    </div>
-	</div>
-	</a>
-	</div>
-   </div>
-</section>
 
-<section id="team">
-   <div class="container">
-	<div class="row">
 	<div class="col-lg-4 box">
 	<a href="#" id="link">
 	<div class="card" id="card">
@@ -187,6 +185,7 @@
 	</div>
 	</a>
 	</div>
+
 	<div class="col-lg-4 box">
 	<a href="#" id="link">
 	<div class="card" id="card">
@@ -198,6 +197,7 @@
 	</div>
 	</a>
 	</div>
+
 	<div class="col-lg-4 box">
 	<a href="#" id="link">
 	<div class="card" id="card">
@@ -209,6 +209,7 @@
 	</div>
 	</a>
 	</div>
+
    </div>
 </section> -->
 

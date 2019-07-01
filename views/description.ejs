@@ -1,0 +1,73 @@
+<head>
+<title>Description</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="description.css">
+</head>
+<style>
+.profile-header h3
+{
+	text-align:center;
+	padding:20px;
+	font-size:45px;
+  color:#A9A9A9
+}
+body
+{
+	  background-color:#090f0f;
+}
+#details
+{
+  color:#A9A9A9;
+}
+</style>
+<body>
+
+<header>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><span>MysuruRentals</span></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Add PG</a></li>
+    </ul>
+	<!-- <ul class="nav navbar-nav navbar-right">
+	  <li><a href="#">username</a></li>
+    </ul> -->
+
+  </div>
+</nav>
+</header>
+<br><br><br>
+
+ <!-- <img src="p1.jpeg" alt="pic"> -->
+
+<div class="container">
+  <div class="profile-header">
+          <h3>Description</h3>
+        </div>
+
+  <hr>
+<div id="details">
+<p id="label"><b>Name of Pg:</b></p><%= pg.name %><br><br>
+<p id="label"><b>Summary:</b></p><%= pg.details %><br><br>
+<p id="label"><b>Name of Owner:</b></p><%= pg.first_name+" "+ pg.last_name %><br><br>
+<p id="label"><b>Address:</b></p><%= pg.address %><br><br>
+<p id="label"><b>Email:</b></p><%= pg.email %><br><br>
+<p id="label"><b>Contact:</b></p><%= pg.contact %><br><br>
+<p id="label"><b>City/District:</b></p><%= pg.city %><br><br>
+<p id="label"><b>State:</b></p><%= pg.state %><br><br>
+<p id="label"><b>Price:</b></p><%= pg.price %><br><br
+</div>
+</div>
+
+
+
+
+</body>
+</html>

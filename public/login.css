@@ -1,7 +1,7 @@
 /*carousel*/
-	
+
   .carousel-inner img {
-      /* make all photos black and white */ 
+      /* make all photos black and white */
       width: 100%; /* Set width to 100% */
       margin: auto;
 	  background-color:#0000008a;
@@ -70,6 +70,5 @@
 {
 	padding:50px;
 	color:#00ffff;
-	background-color:#333333;
+	background-color:#090f0f;
 }
-

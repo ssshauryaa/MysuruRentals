@@ -1,0 +1,149 @@
+
+<html>
+<head>
+<title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+	.navbar-brand
+{
+  font-size:35px;
+  border-right:2px solid white;
+}
+.profile-header h3
+{
+	text-align:center;
+	padding:40px;
+	font-size:45px;
+  color:#A9A9A9;
+}
+
+.form-group
+{
+  color:#A9A9A9;
+}
+.hi
+{
+  color:#A9A9A9;
+}
+.hello
+{
+  color: 	#A9A9A9;
+}
+.image
+{
+max-width:auto;
+height:250px;
+}
+</style>
+<body>
+	<header>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><span style="color:white">Mysuru</span>Rentals</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/ohome">Home</a></li>
+      <li><a href="#featured-service">Features</a></li>
+      <li><a href="#">About Us</a></li>
+	  <li><a href="#team">Team</a></li>
+	  <li><a href="#contact">Contact</a></li>
+    </ul>
+	<ul class="nav navbar-nav navbar-right">
+	  <li><a href="/logout">Logout</a></li>
+    </ul>
+
+  </div>
+</nav>
+</header>
+<section>
+	<div class="profile-header">
+          <h3>Profile</h3>
+        </div>
+	</div>
+	<div class="container">
+	<div class="row">
+		<!-- <div class="col-md-3">
+		<img class="image-fluid image" src="rajesh.jpg" alt="pic">
+		</div> -->
+		<div class="col-md-12">
+		 <div class="profil-header">
+          <h3 class="hi">Personal Information</h3>
+        </div>
+		<hr>
+
+		 <form action="/oprofile1" method="post">
+		<div class="form-group">
+		<label for="name">First Name:</label>
+		<input type="textarea" class="form-control" id="name" name="first_name" value="<%= details.first_name %>" >
+		</div>
+    <div class="form-group">
+		<label for="name">Last Name:</label>
+		<input type="textarea" class="form-control" id="name" name="last_name" value="<%= details.last_name %>" >
+		</div>
+		<div class="form-group">
+		<label for="email">Email:</label>
+		<input type="email" class="form-control" id="email" name="email" value="<%= details.email %>">
+		</div>
+		<div class="form-group">
+		<label for="tel">Contact Number:</label>
+		<input type="tel" class="form-control" id="tel" name="contact" value="<%= details.contact %>">
+		</div>
+		<div class="form-group">
+		<label for="birth">Age</label>
+		<input type="tel" class="form-control" id="birth" name="age" value="<%= details.age %>">
+    </div>
+		<button class="btn btn-primary" type="submit">Update</button>
+		<button class="btn btn-primary" onclick="location.href='/'">Cancel</button>
+</form>
+		</div>
+	</div>
+  <hr>
+
+<!---------------DELETE YOUR PG--------->
+  <div class="profile-header">
+          <h3>Delete your PG</h3>
+        </div>
+    <% var i;
+       for(i=0;i<results.length;i++) {
+       if(i%3==0)
+       { %>
+         <section id="team">
+            <div class="container">
+         	<div class="row">
+    <% } %>
+
+        <div class="col-lg-4 box">
+        <a href="/delete/<%=results[i].id%>" id="link">
+        <div class="card" id="card">
+         <img class="card-img-top" src="p<%=results[i].id%>.jpeg" width="20px" height="200px" alt="Card image" style="width:100%">
+          <div class="card-body" id="desc">
+            <h4 class="card-title hello"><%= results[i].name %></h4>
+            <h4 class="card-title hello"><%= results[i].address %></h4>
+            <p class="card-text hello"><%= results[i].details %></p>
+        </div>
+        </div>
+        </a>
+        </div>
+    <% if(i%3==2) { %>
+        </div>
+      </div>
+        </section>
+    <% } %>
+
+    <% } %>
+
+  </div>
+
+</section>
+</div>
+
+</body>
+<html>
